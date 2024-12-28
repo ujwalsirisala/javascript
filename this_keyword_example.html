@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>this method example</title>
+<script>
+
+var  basicObj ={
+        /*"firstname":"ujwal",
+		"lastname":"sirisala",
+		"displayFullName": function(){
+		console.log(basicObj.firstname+" "+basicObj. lastname);
+		}*/
+		"firstname":"ujwal",
+		"lastname":"sirisala",
+		"displayFullName": function(){
+		console.log(this.firstname+" "+this. lastname);
+		}
+}
+basicObj.displayFullName();
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>this keyword method example</title>
+<script>
+function basicMethod(getTxtBox){
+var get_username=getTxtBox.value;
+document.getElementById('output').innerHTML = get_username;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+Enter Name:<input type=text onkeyup="basicMethod(this)"></input>
+</body>
+</html> 
