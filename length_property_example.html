@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>length property example</title>
+<script>
+function basicMethod(){
+var getValue = document.getElementById('username').value;
+var no_of_chars = getValue.length;
+alert("the character count is" +no_of_chars);
+}
+</script>
+</head>
+<body>
+enter name:<input type="text" id="username" maxLength="2" >
+<button onclick="basicMethod()"> get count</button>
+</body>
+</html>

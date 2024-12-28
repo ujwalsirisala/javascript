@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for loop example two</title>
+<script>
+function basicMethod(){
+var students = ["suresh","rizwan","tanmai","asif"];
+ var result='';
+for(var i=0;i<students.length;i++){
+ /*document.getElementById('listparent').innerHTML = document.getElementById('listparent').innerHTML + "<li>"+students[i]+"</li>"
+ 
+ document.getElementById('listparent').innerHTML += "<li>"+students[i]+"</li>"*/
+ 
+ var students = ["suresh","rizwan","tanmai","asif"];
+ result = result+ "<li>"+students[i]+"</li>"
+}
+ document.getElementById('listparent').innerHTML = result;
+}
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

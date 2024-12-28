@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> jquery fadein and fadeout methods example</title>
+<script src="js/jquery.min.js"></script>
+<style>
+.first{
+width:200px;
+height:200px;
+background-color:orange;
+margin-bottom:10px;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#toggleclassbtn").click(function(){
+    $("#output").toggleClass("first")  
+  })
+  
+})
+</script>
+</head>
+<body>
+<div id="output" ></div>
+<button id="toggleclassbtn">Toggle Class</button>
+
+</body>
+</html>

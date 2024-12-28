@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>array methods examples</title>
+<script>
+function basicMethod(){
+
+//length
+var basicArray =[43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var length_of_array = basicArray.length;
+//document.getElementById('output').innerHTML = length_of_array;
+
+//ascend sort:
+var basicArrayTwo =[43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var ascend_sort_array= basicArrayTwo.sort(function(a,b){
+return a-b
+});
+//document.getElementById('output').innerHTML = ascend_sort_array;
+
+//descend sort:
+var basicArrayTwo =[43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var descend_sort_array= basicArrayTwo.sort(function(a,b){
+return b-a
+});
+//document.getElementById('output').innerHTML = descend_sort_array;
+
+
+//slice:
+var basicArrayfour = [43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+//var slice_array = basicArrayfour.slice(2);
+//var slice_array = basicArrayfour.slice(2,6);
+//var slice_array = basicArrayfour.slice(-5);
+//var slice_array = basicArrayfour.slice(0,-5);
+var slice_array = basicArrayfour.slice(-5,-1);
+//document.getElementById('output').innerHTML =slice_array;
+
+//push:
+var basicArrayFive = [43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var push_array = basicArrayFive.push(16);
+document.getElementById('output').innerHTML = basicArrayFive; 
+//document.getElementById('output').innerHTML = push_array; 
+
+//pop:
+var basicArraySix = [43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var push_array = basicArraySix.push(16);
+var pop_array = basicArraySix.pop();
+//document.getElementById('output').innerHTML = basicArraySix; 
+//document.getElementById('output').innerHTML = pop_array;
+
+//unshift:
+var basicArraySeven = [43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var unshift_array = basicArraySeven.unshift(36);
+//document.getElementById('output').innerHTML = basicArraySeven;
+
+//shift:
+var basicArrayEight = [43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var shift_array = basicArrayEight.shift();
+//document.getElementById('output').innerHTML = basicArrayEight;
+
+
+//join:
+var basicArrayNine = [43,45,6,4,23,76,45,9,8,7,65,43,21,20,10,30];
+var join_array = basicArrayNine.join("*");
+document.getElementById('output').innerHTML = join_array;
+
+
+
+
+
+
+}
+
+
+</script>
+</head>
+<body>
+<div id ="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

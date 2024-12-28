@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>inner text example</title>
+<script>
+function displayText(){
+var firstname = document.getElementById('fname').value;
+document.getElementById('output').innerText = firstname;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+first name:<input type="text" id="fname" onkeyup="displayText()" >
+
+
+</body>
+</html>

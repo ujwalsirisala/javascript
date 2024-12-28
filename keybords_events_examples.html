@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>keybord events examples</title>
+<script>
+function basicKeyUpMethod(){
+var getValue1 = document.getElementById('key_up_txtbox').value;
+alert(getValue1);
+}
+function basicKeyPressMethod(){
+var getValue2 = document.getElementById('key_press_txtbox').value;
+alert(getValue2);
+}
+function basicKeyDownMethod(){
+var getValue3 = document.getElementById('key_down_txtbox').value;
+alert(getValue3);
+}
+</script>
+</head>
+<body>
+key up: <input type="text" id="key_up_txtbox" onkeyup="basicKeyUpMethod()">
+key press: <input type="text" id="key_press_txtbox" onkeyup="basicKeyPressMethod()" >
+key down: <input type="text"id="key_down_txtbox" onkeyup="basicKeyDownMethod()">
+</body>
+</html>

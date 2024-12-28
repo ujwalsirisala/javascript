@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> cookies example</title>
+<script>
+function basicMethod(){
+var user_data = document.getElementById('udata')
+.value;
+document.cookie = "username="+user_data+";Expires="+new Date('2026 10 27').toUTCString();
+}
+
+
+</script>
+</head>
+<body>
+Enter Data : <input type="text" id="udata" ><br><br>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

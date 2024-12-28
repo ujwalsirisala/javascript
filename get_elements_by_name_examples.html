@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> get elements by classname example </title>
+<script>
+function basicMethod(){
+
+var getElements = document.getElementsByName('fname');
+document.getElementById('output').innerHTML = getElements[1].value;
+
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+First Name : <input type="text" name="fname"><br><br>
+Last Name : <input type="text" name="fname"><br><br>
+
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> jquery append prepend before after methods example</title>
+<script src="js/jquery.min.js"></script>
+<style>
+
+</style>
+<script>
+
+$(document).ready(function(){
+  $("#appendbtn").click(function(){
+    $("#output").append("<h2>I am working with durgasoft</h2>")
+  });
+  $("#prependbtn").click(function(){
+     $("#output").prepend("<h2>i am ujwal</h2>")
+  });
+  $("#beforebtn").click(function(){
+     $("#output").before("<h2>i am from hyderabad</h2>")
+  });
+  $("#afterbtn").click(function(){
+     $("#output").after("<h2>durgasoft located in ameerpet, maitrivanam</h2>")
+  });
+  
+})
+</script>
+</head>
+<body>
+<div id="output" >
+<h2>i am a student</h2>
+</div>
+<button id="appendbtn">append</button>
+<button id="prependbtn">prepend</button>
+<button id="beforebtn">before</button>
+<button id="afterbtn">after</button>
+</body>
+</html>

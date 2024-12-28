@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>inner text and inner html</title>
+<script>
+function changeText1(){
+document.getElementById('output1').innerText = "i am a student";
+}
+
+function changeText2(){
+document.getElementById('output2').innerText = "<h3>i am a student</h3> "
+}
+
+
+function changeImage(){
+document.getElementById('output3').innerText = "<img src='images/employee1.jpg' width=200 height=200>"
+}
+function changeText3(){
+document.getElementById('output4').innerHTML = "i am a student";
+}
+
+function changeText4(){
+document.getElementById('output5').innerHTML = "<h3>i am a student</h3> "
+}
+
+function changeImage2(){
+document.getElementById('output6').innerHTML = "<img src='images/employee1.jpg' width=200 height=200>"
+}
+
+</script>
+</head>
+<body>
+<div id="output1">i am ujwal</div>
+<button onclick="changeText1()">Change</button>
+
+<div id="output2">
+<h2>i am ujwal</h2>
+</div>
+<button onclick="changeText2()">Change</button>
+
+<div id="output3">
+<img src="images/car_one.png" width=200 height=200>
+</div>
+<button onclick="changeImage()">Change</button>
+
+<div id="output4">i am ujwal</div>
+<button onclick="changeText3()">Change</button>
+
+<div id="output5">
+<h2>i am ujwal</h2>
+</div>
+<button onclick="changeText4()">Change</button>
+
+<div id="output6">
+<img src="images/car_one.png" width=200 height=200>
+</div>
+<button onclick="changeImage2()">Change</button>
+
+
+</body>
+</html>

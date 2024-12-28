@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> jquery slideup and slidedown methods example</title>
+<script src="js/jquery.min.js"></script>
+<style>
+#output{
+width:200px;
+height:200px;
+background-color:orange;
+margin-bottom:10px;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#slideupbtn").click(function(){
+      $("#output").slideUp(10000); 
+  })
+  
+  $("#slidedownbtn").click(function(){
+    $("#output").slideDown(10000);
+  })
+})
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button id="slideupbtn">slideup</button>
+<button id="slidedownbtn">slidedown</button>
+</body>
+</html>

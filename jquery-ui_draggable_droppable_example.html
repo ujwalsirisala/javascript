@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic Jquery Example</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<style>
+.uldragcontainer{
+display:inline-block;
+float:left;
+}
+ul{
+width:200px;
+list-style-type:none;
+}
+li{
+height:30px;
+background:linear-gradient(120deg,red,orange,black);
+margin-bottom:30px;
+text-align:center;
+line-height:30px;
+color:white;
+font-size:22px;
+font-weight:bold;
+letter-spacing:1.5px;
+text-shadow:2px 2px 2px blue;
+cursor:pointer;
+}
+.uldropcontainer{
+width:400px;
+height:auto;
+display:inline-block;
+float:right;
+background:radial-gradient(orange,black,green);
+margin-right:150px;
+}
+
+</style>
+<script>
+/*
+$(document).ready(function(){
+
+})*/
+//below code is shortcut for above code
+/*$(function(){
+
+})*/
+
+$(function(){
+$(".uldragcontainer ul li").draggable({
+	containment:'document',
+	revert:true,
+	start:function(){
+	content = $(this).html()
+	}
+});
+
+$(".uldropcontainer").droppable({
+	accept:'li',
+	drop:function(){
+		$(".uldropcontainer ul").append("<li>"+content+"</li>")
+	}
+});
+});
+</script>
+</head>
+<body>
+<div class="uldragcontainer">
+	<ul>
+		<li>ujwal</li>
+		<li>nikhil</li>
+		<li>gopichand</li>
+		<li>sandeep</li>
+		<li>bheeresh </li>
+	</ul>
+</div>
+
+<div class="uldropcontainer">
+	<ul></ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>different types of functions</title>
+<script>
+//naming or normal method
+function addOne(){
+console.log("this is naming or normal add method");
+}
+addOne();
+
+//naming or normal function with params
+function addTwo(a,b){
+console.log(a+b);
+}
+addTwo(6,4);
+
+//naming or normal function with params
+function addThree(a,b){
+console.log(a+b);
+}
+addThree(6,"4");
+
+//naming or normal function with params
+function addFour(a,b){
+console.log(a-b);
+}
+addFour(6,"4");
+
+//naming or normal function with params
+function addFive(a,b){
+console.log(a+b);
+}
+addFive(6);
+
+//anonymous function without params
+var addSix = function(){
+console.log("this is anonymous add method");
+}
+addSix();
+
+
+//anonymous function with params
+var addSeven = function(a,b){
+console.log(a+b);
+}
+addSeven(6,4);
+
+
+
+//lambda expression or (fat) arrow method without params
+var addEight = ()=>{
+console.log("this is lambda or arrow add method ");
+}
+addEight();
+
+
+//lambda expression or (fat) arrow method with params
+var addNine = (a,b)=>{
+console.log(a+b);
+}
+addNine(6,4);
+
+
+var sample = (a)=>{
+return a;
+}
+console.log(sample(6));  
+
+var sample = a=>{
+return a;
+}
+console.log(sample(6)); 
+  
+
+var sample = a=>a;
+console.log(sample(6));  
+
+var sample = a=>return a;
+console.log(sample(6));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

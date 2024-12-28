@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>compare values examples</title>
+<script>
+function basicMethod(){
+/*var firstvalue = parseInt(document.getElementById('fvalue').value);
+var secondvalue = parseInt(document.getElementById('svalue').value);*/
+
+var firstvalue = parseFloat(document.getElementById('fvalue').value);
+var secondvalue = parseFloat(document.getElementById('svalue').value);
+if(firstvalue>secondvalue){
+alert("first value is higher ");
+}
+else if(firstvalue == secondvalue){
+alert("both are equal values");
+}
+else{
+alert("second value is higher");
+}
+}
+</script>
+</head>
+<body>
+First Value:<input type="next" id="fvalue"><br><br>
+Second Value:<input type="next" id="svalue"><br><br>
+<button onclick="basicMethod()" >click</button>
+
+</body>
+</html>

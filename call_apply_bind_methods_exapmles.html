@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>call_apply_bind_methods_examples</title>
+<script>
+var basicObj = {
+    myNumber : 6,
+	/*displayNumber:function(){
+	console.log(this.myNumber)
+	basicObj.displayNumber();*/
+	}
+/*var displayNumber=function(a,b,c){
+	console.log(this.myNumber+a+b+c)
+}
+displayNumber.call(basicObj);
+displayNumber.call(basicObj,4,7,2);*/
+
+/*var displayNumber=function(){
+	console.log(this.myNumber)
+	} 
+displayNumber.apply(basicObj);*/
+
+/*var displayNumber=function(a,b,c){
+	console.log(this.myNumber+a+b+c)
+	} 
+	var args_array=[4,7,2];
+displayNumber.apply(basicObj,args_array);*/
+
+
+/*var displayNumber=function(a,b,c){
+	console.log(this.myNumber+a+b+c)
+	}
+var bindMethod = displayNumber.bind(basicObj);
+bindMethod(4,7,2);*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

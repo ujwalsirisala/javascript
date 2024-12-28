@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>async and await method examples</title>
+<script>
+var articles = [
+{"title":"Facts about elon musk","description":"slon musk is founder of spacex,tesla"},
+
+{"title":"Facts about billigates","description":"billigates is founder of microsoft"}
+];
+
+function getArticles(){
+setTimeout(()=>{
+var result='';
+articles.foreach((articleObj)=>{
+result = result+"<li>"+articleObj.title+"</li>"
+});
+document,getElementById('listparent').innerHTML  = result;
+},3000);
+}
+
+function insertArticle(articleObj){
+return new Promise((success,fail)=>{
+setTimeout(()=>{
+var push_array = articles.push(articleObj);
+if(push_array){
+return success();
+} else {
+return fail("something went wrong")
+}
+},4000)
+});
+}
+
+async function displayResult(){
+await insertArticle({"title":"facts about steve jobs","description":"steve jobs is the founder of apple company"});
+getArticles();
+}
+displayResult();
+</script>
+</head>
+<body>
+<ul id =" listparent"></ul>
+</body>
+</html>

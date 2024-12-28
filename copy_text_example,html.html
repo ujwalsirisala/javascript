@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>copy value example</title>
+<script>
+function displaytext(){
+var getValue = document.getElementById('fname').value;
+document.getElementById('sname').value = getValue;
+}
+</script>
+</head>
+<body>
+first name:<input type="text" id="fname"  onkeyup="displaytext()" ><br><br>
+second name:<input type="text" id="sname" >
+
+</body>
+</html>

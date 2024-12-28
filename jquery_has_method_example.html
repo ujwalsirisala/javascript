@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery nextuntil method Example</title>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#applycssbtn").click(function(){
+		$("ul#listparent li").has("strong").css({
+			"width":"200px",
+			"height":"30px",
+			"list-style-type":"none",
+			"color":"white",
+			"background-color":"orange",
+			"border":"2px dashed black",
+			"margin-top":"10px",
+			"margin-bottom":"10px",
+			"text-align":"center",
+			"line-height":"30px",
+			"transition":"0.6s"
+		})
+	})
+})
+</script>
+</head>
+<body>
+<ul id="listparent">
+	<li>This is First List Item</li>
+	<li class="sample">This is <strong>Second</strong> List Item</li>
+	<li>This is Third List Item</li>
+	<li>This is Fourth List Item</li>
+	<li>This is Fifth List Item</li>
+	<li>This is <strong>Sixth</strong> List Item</li>
+	<li class="sample">This is Seventh List Item</li>
+	<li>This is Eighth List Item</li>
+</ul>
+<button id="applycssbtn">Apply CSS</button>
+
+</body>
+</html>

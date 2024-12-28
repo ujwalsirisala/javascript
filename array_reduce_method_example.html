@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>array reduce methods examples</title>
+<script>
+function basicMethod(){
+
+var basicArray=[2,4,6];
+/*var sum = basicArray.reduce((accumelator,currentValue)=>{
+return accumelator+currentValue
+},0)
+document.getElementById('output').innerHTML = sum;
+}*/
+
+var multiply = basicArray.reduce((accumelator,currentValue)=>{
+return accumelator*currentValue
+},1)
+document.getElementById('output').innerHTML = multiply;
+}
+
+
+
+
+</script>
+</head>
+<body>
+<div id ="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

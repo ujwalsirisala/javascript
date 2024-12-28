@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>date method two</title>
+<script>
+function basicDateMethods(){
+var dateObj = new Date(2026 ,06 ,24);
+//var month_name = dateObj.toLocaleString('default',{month:'long'});
+
+//var month_name = dateObj.toLocaleString('default',{month:'short'});
+
+var month_name = dateObj.toLocaleString('default',{month:'narrow'});
+document.getElementById('output').innerHTML = month_name;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicDateMethods()">click</button>
+</body>
+</html>

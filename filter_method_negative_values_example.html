@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>filter method example </title>
+<script>
+function basicMethod(){
+var basicArray = [10,12,34,72,-4,-67,-89,56,76,43,21,22];
+/*var filter_result = basicArray.filter(function(getValue,getIndex){
+console.log("my index no is "+getIndex+" , my value is "+getValue);
+
+});*/
+
+/*var filter_result = basicArray.filter(function(getValue){
+if(getValue>0){
+return getValue
+}
+});
+console.log(filter_result);*/
+
+/*var filter_result = basicArray.filter(function(getValue){
+return getValue>0
+});
+console.log(filter_result);*/
+
+/*var filter_result = basicArray.filter(function(getValue){
+return getValue>0
+});
+var map_results = filter_result.map(function(get_pos_value){
+return "<li>"+get_pos_value+"</li>"
+});
+var remove_comma_results = map_results.join("");
+document.getElementById('output').innerHTML = remove_comma_results*/
+
+/*var filter_result = basicArray.filter((getValue)=>{
+return getValue>0
+});
+var map_results = filter_result.map((get_pos_value)=>{
+return "<li>"+get_pos_value+"</li>"
+});
+var remove_comma_results = map_results.join("");
+document.getElementById('output').innerHTML = remove_comma_results*/
+
+
+
+var filter_result = basicArray.filter(getValue=>getValue>0);
+var map_results = filter_result.map(get_pos_value=>"<li>"+get_pos_value+"</li>");
+var remove_comma_results = map_results.join("");
+document.getElementById('output').innerHTML = remove_comma_results
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

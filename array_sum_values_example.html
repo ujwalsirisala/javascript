@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>array sum values examples</title>
+<script>
+function basicMethod(){
+
+var basicArray=[2,4,6];
+/*var result=0;
+for(var i=0;i<basicArray.length;i++){
+result=result+basicArray[i]
+}
+document.getElementById('output').innerHTML = result;*/
+
+
+
+var result=0;
+basicArray.forEach(function(getValue){
+result = result+getValue
+})
+document.getElementById('output').innerHTML = result;
+}
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<div id ="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

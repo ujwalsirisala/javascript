@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> jquery fadein and fadeout methods example</title>
+<script src="js/jquery.min.js"></script>
+<style>
+
+</style>
+<script>
+$(document).ready(function(){
+   $("#applycssbtn").click(function(){
+      $("#output").css({
+	   "width":"200px",
+	   "height":"200px",
+	   "background-color":"orange",
+	   "margin-bottom":"10px"
+	  })  
+   })
+})
+</script>
+</head>
+<body>
+<div id="output" ></div>
+<button id="applycssbtn">apply css</button>
+</body>
+</html>

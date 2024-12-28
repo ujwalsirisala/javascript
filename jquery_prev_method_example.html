@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery prev method Example</title>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#applycssbtn").click(function(){
+    $("#output2").prev().css({
+	    "width":"200px",
+		"height":"200px",
+		"background-color":"orange",
+		"margin-bottom":"10px"
+		
+		
+	})
+  })
+})
+</script>
+</head>
+<body>
+<div id="output1"></div>
+<div id="output2"></div>
+<button id="applycssbtn">Apply CSS</button>
+
+</body>
+</html>

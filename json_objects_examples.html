@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON objects examples</title>
+<script>
+function basicMethod(){
+var basicObj = {
+      "id" :"1",
+	  "firstname" : "ujwal",
+	  "lastname" : "sirisala",
+	  "email" : "ujwal@gmail.com",
+}
+console.log(basicObj);
+var convert_into_json_string = JSON.stringify(basicObj);
+console.log(convert_into_json_string.firstname);
+var convert_json_srting_json_object = JSON.parse(convert_into_json_string);
+console.log(convert_json_srting_json_object.firstname);
+}
+
+</script>
+</head>
+<body>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

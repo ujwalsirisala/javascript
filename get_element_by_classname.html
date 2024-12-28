@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> get elements by classname example </title>
+<script>
+function basicMethod(){
+/*var getElements = document.getElementsByClassName('sample');
+
+for(var i=0;i<getElements.length;i++){
+getElements[i].style.color = "white";
+getElements[i].style.backgroundColor = "orange";
+getElements[i].style.border = "2px solid black";
+}*/
+
+
+var getElement = document.getElementById('samplenew');
+
+
+getElement.style.color = "white";
+getElement.style.backgroundColor = "orange";
+getElement.style.border = "2px solid black";
+
+
+}
+
+</script>
+</head>
+<body>
+<div id="output"/>
+<h2 id="samplenew">I am Ujwal</h2>
+<h2 class="sample">I am from India</h2>
+<h2 class="sample">I am a Software Developer</h2>
+<h2 class="sample">I am from Hyderabad, RangaReddy Dist</h2>
+<h2 id="samplenew">RangaReddy is located in Telangana</h2>
+
+</div>
+
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

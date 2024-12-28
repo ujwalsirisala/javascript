@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for each method objects example two</title>
+<script>
+function basicMethod(){
+var students =[
+   {
+      "id":1,
+	  "firstname":"ujwal",
+	  "lastname":"sirisala",
+	  "email":"ujwal@gmail.com"
+   },
+   {
+      "id":2,
+	  "firstname":"gopi",
+	  "lastname":"nalluri",
+	  "email":"gopi@gmail.com"
+   },
+   {
+      "id":3,
+	  "firstname":"nikhil",
+	  "lastname":"tadi",
+	  "email":"nikhil@gmail.com"
+   },
+   {
+      "id":4,
+	  "firstname":"sandeep",
+	  "lastname":"oyo",
+	  "email":"sandeep@gmail.com"
+   },
+   
+];
+var result = '';
+/*students.forEach(function(getValue){
+//console.log(getValue.firstname);
+result=result+"<li>"+getValue.firstname+"<li>"
+});
+document.getElementById('listparent').innerHTML = result;*/
+
+
+/*students.forEach((getValue)=>{
+//console.log(getValue.firstname);
+result=result+"<li>"+getValue.firstname+"<li>"
+});
+document.getElementById('listparent').innerHTML = result;*/
+
+students.forEach(getValue=>result=result+"<li>"+getValue.firstname+"<li>"
+);
+document.getElementById('listparent').innerHTML = result;
+
+
+
+
+}
+
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

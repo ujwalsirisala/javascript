@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> get elements by tagname example </title>
+<script>
+function basicMethod(){
+var getElements = document.getElementsByTagName('h2');
+
+/*getElements[i].style.color="white";
+getElements[i].style.backgroundColor="orange";
+getElements[i].style.border="2px solid black";*/
+
+
+/*for(i=0;i<getElements.length;i++){
+getElements[i].style.color="white";
+getElements[i].style.backgroundColor="orange";
+getElements[i].style.border="2px solid black";
+}*/
+
+
+/*for(i=0;i<getElements.length;i++){
+if(i==1 || i==3){
+getElements[i].style.color="white";
+getElements[i].style.backgroundColor="green";
+getElements[i].style.border="2px solid black";
+}
+else{
+getElements[i].style.color="white";
+getElements[i].style.backgroundColor="orange";
+getElements[i].style.border="2px solid black";
+}
+
+
+}*/
+
+
+for(i=0;i<getElements.length;i++){
+if(i%2!=0){
+getElements[i].style.color="white";
+getElements[i].style.backgroundColor="green";
+getElements[i].style.border="2px solid black";
+}
+else{
+getElements[i].style.color="white";
+getElements[i].style.backgroundColor="orange";
+getElements[i].style.border="2px solid black";
+}
+
+
+}
+
+}
+
+</script>
+</head>
+<body>
+<div id="output"/>
+<h2>I am Ujwal</h2>
+<h2>I am from India</h2>
+<h2>I am a Software Developer</h2>
+<h2>I am from Hyderabad, RangaReddy Dist</h2>
+<h2>RangaReddy is located in Telangana</h2>
+
+<h2>I am Ujwal</h2>
+<h2>I am from India</h2>
+<h2>I am a Software Developer</h2>
+<h2>I am from Hyderabad, RangaReddy Dist</h2>
+<h2>RangaReddy is located in Telangana</h2>
+
+<h2>I am Ujwal</h2>
+<h2>I am from India</h2>
+<h2>I am a Software Developer</h2>
+<h2>I am from Hyderabad, RangaReddy Dist</h2>
+<h2>RangaReddy is located in Telangana</h2>
+
+<h2>I am Ujwal</h2>
+<h2>I am from India</h2>
+<h2>I am a Software Developer</h2>
+<h2>I am from Hyderabad, RangaReddy Dist</h2>
+<h2>RangaReddy is located in Telangana</h2>
+</div>
+
+
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

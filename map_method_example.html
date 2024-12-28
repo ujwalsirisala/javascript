@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>map method example</title>
+<script>
+function basicMethod(){
+var basicArray = [10,12,34,72,4,67,89,56,76,43,21,22];
+var map_result = basicArray.map(function(getValue,getIndex){
+//return "my index is "+getIndex+" , my value is "+getValue;
+console.log("my index is "+getIndex+" , my value is "+getValue);
+});
+//console.log(map_result);
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

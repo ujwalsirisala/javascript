@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>map method example two</title>
+<script>
+function basicMethod(){
+var students = ["suresh","rizwan","tanmai","asif"];
+
+/*var map_result =students.map(function(getValue){
+return "<li>"+getValue+"</li>";
+//console.log(getValue);
+});
+var remove_comma_results = map_result.join(" ");
+document.getElementById('listparent').innerHTML = remove_comma_results;*/
+
+/*var map_result =students.map((getValue)=>{
+return "<li>"+getValue+"</li>";
+});
+var remove_comma_results = map_result.join(" ");
+document.getElementById('listparent').innerHTML = remove_comma_results;*/
+
+var map_result =students.map(getValue=> "<li>"+getValue+"</li>");
+var remove_comma_results = map_result.join(" ");
+document.getElementById('listparent').innerHTML = remove_comma_results;
+
+}
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

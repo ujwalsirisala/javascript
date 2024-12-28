@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for each method example one</title>
+<script>
+function basicMethod(){
+var basicArray = [10,12,34,72,4,67,89,56,76,43,21,22];
+basicArray.forEach(function(getValue,getIndex){
+console.log("my index is "+getIndex+ ", my value is "+getValue);
+});
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

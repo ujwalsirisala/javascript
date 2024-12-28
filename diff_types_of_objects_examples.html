@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>different types of objects examples</title>
+<script>
+function basicMethod(){
+//normal object
+/*var stuObj = {
+    "id" : 1,
+	"firstname":"ujwal",
+	"lastname":"sirisala",
+	"mail":"ujwal@gmail.com"
+}
+document.getElementById('output').innerHTML = stuObj.firstname;*/
+
+//nested object
+/*var stuNestedObj = {
+    "id": 1,
+	"firstname":"ujwal",
+	"lastname":"sirisala",
+	"email":"ujwal@gmail.com",
+	"address":{
+	    "city":"hyderabad",
+		"state":"telangana",
+		"country":"india",
+	
+	}
+}
+document.getElementById('output').innerHTML = "my name is "+stuNestedObj.firstname +" i am from "+stuNestedObj.address.city;
+
+document.getElementById('output').innerHTML =
+`my name is ${stuNestedObj.firstname} , i am from ${stuNestedObj.address.city}`;*/
+
+//array inside an object
+var stuNestedArrayObj = {
+    "id": 1,
+	"firstname":"ujwal",
+	"lastname":"sirisala",
+	"email":"ujwal@gmail.com",
+	"address":{
+	    "city":"hyderabad",
+		"state":"telangana",
+		"country":"india",
+	
+	},
+    "technical_skills":["html5","css3","javascript","angular"]	
+}
+document.getElementById('output').innerHTML = `my name is ${stuNestedArrayObj.firstname} , i am from ${stuNestedArrayObj.address.city}, i am a ${stuNestedArrayObj.technical_skills[2]} student`;
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

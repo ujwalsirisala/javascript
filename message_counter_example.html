@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>inner text example</title>
+<script>
+function messageCounter(){
+var message = document.getElementById('msg').value;
+var message_chars = message.length;
+var maximum_chars = 100;
+var remained_chars = maximum_chars - message_chars; 
+document.getElementById('chars').innerHTML = remained_chars;
+}
+</script>
+</head>
+<body>
+<textarea id="msg" rows="10" cols="60" maxlength="100"  onkeyup="messageCounter()"></textarea><br><br>
+<span id="chars">100</span>characters remained
+
+</body>
+</html>

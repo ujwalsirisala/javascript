@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for each method objects example two</title>
+<script>
+function basicMethod(){
+var students =[
+   {
+      "id":1,
+	  "firstname":"ujwal",
+	  "lastname":"sirisala",
+	  "email":"ujwal@gmail.com"
+   },
+   {
+      "id":2,
+	  "firstname":"gopi",
+	  "lastname":"nalluri",
+	  "email":"gopi@gmail.com"
+   },
+   {
+      "id":3,
+	  "firstname":"nikhil",
+	  "lastname":"tadi",
+	  "email":"nikhil@gmail.com"
+   },
+   {
+      "id":4,
+	  "firstname":"sandeep",
+	  "lastname":"oyo",
+	  "email":"sandeep@gmail.com"
+   },
+   
+];
+/*var map_result = students.map(function(stuobj){
+return "<li>"+stuobj.firstname+"</li>";
+});
+var remove_comma_result = map_result.join("");
+document.getElementById('listparent').innerHTML = remove_comma_result ;*/
+
+/*var map_result = students.map((stuobj)=>{
+return "<li>"+stuobj.firstname+"</li>";
+});
+var remove_comma_result = map_result.join("");
+document.getElementById('listparent').innerHTML = remove_comma_result ;
+*/
+
+var map_result = students.map(stuobj=> "<li>"+stuobj.firstname+"</li>");
+var remove_comma_result = map_result.join("");
+document.getElementById('listparent').innerHTML = remove_comma_result ;
+}
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

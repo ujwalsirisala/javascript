@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> local storage example</title>
+<script>
+function set_data_in_localStorage(){
+var user_data = document.getElementById('udata').value;
+localStorage.setItem("firstname",user_data);
+}
+function get_data_from_localStorage(){
+var user_data = localStorage.getItem("firstname");
+document.getElementById('output').innerHTML = user_data;
+}
+
+function delete_data_from_localStorage(){
+localStorage.removeItem("firstname");
+}
+
+</script>
+</head>
+<body>
+<div id="output"/></div>
+Enter Data : <input type="text" id="udata" ><br><br>
+<button onclick="set_data_in_localStorage()">Set Data</button>
+<button onclick="get_data_from_localStorage()">Get Data</button>
+<button onclick="delete_data_from_localStorage()">Remove Data</button>
+</body>
+</html>

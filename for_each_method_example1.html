@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for each method example one</title>
+<script>
+function basicMethod(){
+var students = ["suresh","rizwan","tanmai","asif"];
+var result='';
+/*students.forEach(function(getValue){
+//console.log(getValue);
+result=result+"<li>"+getValue+"</li>"
+});
+document.getElementById('listparent').innerHTML = result;*/
+
+/*students.forEach((getValue)=>{
+//console.log(getValue);
+result=result+"<li>"+getValue+"</li>"
+});
+document.getElementById('listparent').innerHTML = result;*/
+
+students.forEach(getValue=>result=result+"<li>"+getValue+"</li>"
+);
+document.getElementById('listparent').innerHTML = result;
+
+
+
+}
+
+
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+<button onclick="basicMethod()">click</button>
+</body>
+</html>

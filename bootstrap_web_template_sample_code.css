@@ -1,0 +1,39 @@
+.navbar img{
+	/*1rem = 16px;*/
+	height:3rem;
+	margin-top:-10px;
+}
+.logo-heading{
+	font-family: 'Stylish', sans-serif;
+	text-transform:uppercase;
+	font-size:48px;
+	text-shadow:2px 2px 2px blue;
+}
+.navbar-toggler:focus{
+	outline:none;
+}
+.nav-link{
+	color:white!important;
+	text-transform:uppercase;
+	font-family: 'Stylish', sans-serif;
+	text-shadow:2px 2px 2px blue;
+}
+.height100{
+	min-height:100vh;
+}
+.title-border{
+	width:50px;
+	height:10px;
+}
+.about-picture{
+	background-image:url('../images/corporate.jpg');
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+	font-size:48px;
+	font-family: 'Stylish', sans-serif;
+	text-shadow:2px 2px 2px blue;
+}
+.height80{
+	min-height:80vh;
+}
